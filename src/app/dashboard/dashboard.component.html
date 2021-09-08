@@ -1,0 +1,13 @@
+
+
+
+
+  <div class="bookFlex">
+
+      <div *ngFor = "let book of books" style="padding:27px">
+          <app-book-items [book]="book" (bookAdd)="AddBook($event)">
+        </app-book-items>
+    </div>
+</div>
+
+  

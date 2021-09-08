@@ -1,0 +1,78 @@
+
+.background-color {
+    min-height: 208px;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+
+.BookImage {
+    height: 182px;
+    width: 145px;
+    /* background-color: grey; */
+    position: absolute;
+    top: 16px;
+    left: 75px;
+}
+
+.card-title{
+    position: relative;
+    top: -11px;
+}
+.card-price {
+    position: relative;
+    top: -44px;
+    font-weight: bold;
+}
+
+.card-originalprice {
+    position: relative;
+    top: -69px;
+    left:39px;
+    text-decoration: line-through;
+}
+
+
+.card-author {
+    position: relative;
+    top: -22px;
+}
+
+.card-ratings{
+    position: relative;
+    top: -22px;
+}
+
+
+.card-people{
+    position: relative;
+    top: -45px;
+    left:39px;
+}
+
+.addToBag{
+    position: relative;
+    top:-49px;
+}
+
+
+.addedToBag{
+    position: relative;
+    top:-49px;
+    width:254px;
+}
+
+.wishlist{
+    position: relative;
+    top: -87px;
+    left: 118px;
+}
+
+.AddToBag :before {
+    content: ADD TO BAG
+}
+
+
+.AddedToBag :after{
+    content: ADDED TO BAG
+}

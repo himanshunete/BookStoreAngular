@@ -1,0 +1,183 @@
+
+    
+  <div style="display: flex; flex-direction: column; justify-content: center;">
+    <div class="card firstCard">
+          <div class="card-body">
+              <div style="font-size: xx-large;">My Cart</div>
+              <div *ngFor = "let bookCart of cart" style="padding:27px">
+                
+                <div class="card cardFlex1 repeatControlFirstCard">
+                    <div class="backgroundColor1">
+                        <img src="{{bookCart.image}}" CssClass="BookImage1" style="width: 109px;"  >
+                    </div>
+                    
+                    <div class="card-body ">
+                        <h2 class="card-title">{{bookCart.title}}</h2>
+                        <div class="card-author">{{bookCart.author}}</div>
+                        <div class="card-price">{{bookCart.price}}</div>
+                        <div class="card-originalprice">{{bookCart.originalprice}}</div>
+                    </div>
+                    <div class="plus_minus">
+                        <div class="plus_minus1">
+                            <div class="minus"  >-</div>
+                           
+                            <input type="number" style="width: 40px; text-align: center; max-height: 27px;" class="form-control" id="Id" name="2" >
+                            <div class="plus"  >+</div>
+                        </div>
+                       
+                        <button class="btn remove" >remove</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+        <div style="margin-bottom: 19px;">
+            <button class="btn btn-primary placeOrder" (click)="PlaceOrder()" >PLACE ORDER</button>
+        </div>
+    </div>
+
+    <div class="card secondCard">
+        <form (ngSubmit)="OnSubmit()">
+        <div class="card-body">
+            <div class="customer_edit">
+                <div style="font-size: xx-large;" >Customer Details</div>
+                <button class="btn"  >Edit</button>
+            </div>
+
+             <div class="card" id="customer" style="border: white" *ngIf="showCustomerForm">
+                <div class="card-body">
+                    
+
+                        <div style="display: flex">
+                            <div class="col-md-5 col-sm-7">
+                                <div class="from-group">
+                                    <input type="text" placeholder="Name"class="form-control" [(ngModel)]="name" id="name"  name="name">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-7" style="margin-left: 10px;">
+                                <div class="from-group">
+                                    <input type="number" placeholder="Phone Number"class="form-control" [(ngModel)]="phone" id="phone" name="phone" >
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pincode_locality">
+                            <div class="col-md-5 col-sm-7">
+                                <div class="from-group">
+                                    <input type="number" placeholder="Pin Code"class="form-control" [(ngModel)]="pincode" id="pincode" name="pincode" >
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-7" style="margin-left: 10px;">
+                                <div class="from-group">
+                                    <input type="text" placeholder="Locality"class="form-control" [(ngModel)]="locality" id="locality" name="locality" >
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="address">
+                            <div class="col-md-1 col-sm-7">
+                                <div class="from-group">
+                                    <input type="text" style="width:515px" placeholder="Address"class="form-control" [(ngModel)]="address" id="address" name="address" >
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="city_landmark">
+                            <div class="col-md-5 col-sm-7">
+                                <div class="from-group">
+                                <input type="text" placeholder="City"class="form-control" [(ngModel)]="city"  id="" name="city" >
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7" style="margin-left: 10px;">
+                            <div class="from-group">
+                                <input type="text" placeholder="Landmark"class="form-control" [(ngModel)]="landmark"  id="landmark" name="landmark" >
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="type">
+                        <div>Type</div>
+                    </div>
+                    
+                    <div class="radio">
+                        <div class="col-md-5 col-sm-7">
+                            <div class="from-group">
+                                <input type="radio"  class="radio1" id="radio" value="Home" [(ngModel)]="type" name="radio" >
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7">
+                            <div class="from-group">
+                                <label   class="radioLabel1">Home</label>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7" style="margin-left: 10px;">
+                            <div class="from-group">
+                                <input type="radio" class="radio2" id="radio" value="Work" [(ngModel)]="type" name="radio" >
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7">
+                            <div class="from-group">
+                                <label   class="radioLabel2" >Work</label>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7" style="margin-left: 10px;">
+                            <div class="from-group">
+                                <input type="radio"  class="radio3" id="radio" value="Other" [(ngModel)]="type" name="radio" >
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7">
+                            <div class="from-group">
+                                <label  class="radioLabel3">Other</label>
+                                
+                            </div>
+                        </div>
+                    </div> 
+                
+                </div>
+                <br />
+            </div> 
+            
+        </div>
+        <div style="margin-bottom: 19px;">
+            <button class="btn btn-primary " type="submit" style="position: relative; left: 487px; width: 154px; " >CONTINUE</button>
+        </div>
+    </form>
+    </div> 
+
+    <div class="card thirdCard">
+        <div class="card-body">
+            <div style="font-size: xx-large;">Order Summary</div>
+           
+            <div *ngFor = "let bookCart of cart" style="padding:27px" >
+                
+                <div class="card cardFlex1 repeatControlOrder"  *ngIf="showOrder">
+                    <div class="backgroundColor1">
+                        <img src="{{bookCart.image}}" CssClass="BookImage1" style="width: 109px;"  >
+                    </div>
+                    
+                    <div class="card-body ">
+                        <h2 class="card-title">{{bookCart.title}}</h2>
+                        <div class="card-author">{{bookCart.author}}</div>
+                        <div class="card-price">{{bookCart.price}}</div>
+                        <div class="card-originalprice">{{bookCart.originalprice}}</div>
+                    </div>
+
+                    </div>
+                </div>
+
+               
+        </div>
+
+        <div style="margin-bottom: 19px;">
+            <a  class="btn btn-primary " routerLink="/order" style="position: relative; left: 487px; width: 154px; "  >CONTINUE</a>
+        </div>
+    </div>
+
+    </div>
+    

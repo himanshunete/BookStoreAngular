@@ -1,0 +1,30 @@
+<div class="card  " style="width: 18rem;height: 405px;">
+    
+    <div class="background-color">
+        <img src={{book.image}} class="BookImage" >
+    </div>
+    <div class="card-body">
+ 
+        <h2 class="card-title">{{book.title}}</h2>
+        <div class="card-author">{{book.author}}</div>
+        <div class="card-ratings">{{book.ratings}}</div>
+        <div class="card-people">{{book.people}}</div>
+        <div class="card-price">{{book.price}}</div>
+        <div class="card-originalprice">{{book.originalprice}}</div>
+
+           
+                <div *ngIf=" changeCss, else elseBlock " class="cart"> 
+                    <button class="btn btn-primary addToBag" (click)="AddToBag(book)" > 
+                    ADD TO BAG
+                </button>
+            </div>
+        <ng-template #elseBlock >
+            <button class="btn btn-primary addedToBag" disabled="true" > 
+                ADDED TO BAG
+            </button>
+        </ng-template>
+            <button class="btn btn-primary wishlist" style="width: 119px;  margin-left: 12px;" *ngIf="show">WISHLIST</button>
+        
+    </div>
+</div>
+        

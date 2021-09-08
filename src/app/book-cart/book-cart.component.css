@@ -1,0 +1,230 @@
+.firstCard{
+    width: 42rem;
+    display: flex;
+    margin-bottom: 21px;
+    justify-content: center;
+}
+
+
+.cardFlex1 {
+    margin: 15px;
+    width: 36rem;
+    height: 152px;
+}
+
+
+.repeatControlFirstCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 36px;
+    border: 0px solid rgba(0,0,0,.125);
+}
+
+
+.backgroundColor1 {
+    height: 224px;
+    width: 26%;
+}
+
+
+.BookImage1 {
+    height: 109px;
+    width: 145px;
+    /* background-color: grey; */
+    position: absolute;
+    top: 17px;
+    left: 25px;
+}
+
+
+.card-title{
+    position: relative;
+    top: -11px;
+}
+.card-price {
+    position: relative;
+    top: -21px;
+    font-weight: bold;
+}
+
+.card-originalprice {
+    position: relative;
+    top: -46px;
+    left:39px;
+    text-decoration: line-through;
+}
+
+
+.card-author {
+    position: relative;
+    top: -22px;
+}
+
+.card-ratings{
+    position: relative;
+    top: -22px;
+}
+
+
+.card-people{
+    position: relative;
+    top: -45px;
+    left:39px;
+}
+
+
+.placeOrder {
+    position: relative;
+    left: 487px;
+    width: 154px;
+    top: 1px;
+}
+
+
+.plus_minus {
+    position: relative;
+    top: 129px;
+    right: 224px;
+}
+
+.plus_minus1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 91px;
+}
+
+.minus {
+    border-radius: 50%;
+    /* color: black; */
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    width: 28px;
+    max-height: 25px;
+    padding-right: -29px;
+    background-color: darkgray;
+    /* padding-top: 5px; */
+    position: relative;
+    padding-left: 11px;
+    right: 6px;
+}
+
+.plus {
+    border-radius: 50%;
+    /* color: black; */
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    width: 28px;
+    max-height: 25px;
+    padding-right: -29px;
+    background-color: darkgray;
+    /* padding-top: 5px; */
+    position: relative;
+    padding-left: 11px;
+    right: -7px;
+}
+
+.remove {
+    position: relative;
+    right: -24px;
+    font-size: 19px;
+    top: -34px;
+}
+
+
+.secondCard {
+    width: 42rem;
+    display: flex;
+    margin-bottom: 21px;
+}
+
+
+.customer_edit {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 21px;
+}
+
+
+.pincode_locality {
+    display: flex;
+    display: flex;
+    margin-top: 10px;
+}
+
+.address {
+    display: flex;
+    display: flex;
+    margin-top: 10px;
+}
+
+.Address {
+    height: 83px;
+    width: 515px;
+}
+
+.city_landmark {
+    display: flex;
+    display: flex;
+    margin-top: 10px;
+}
+
+.type {
+    display: flex;
+    display: flex;
+    margin-top: 14px;
+}
+
+.radio {
+    display: flex;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 3px
+}
+
+.radioLabel1 {
+    position: relative;
+    right: 203px;
+}
+
+.radio1 {
+    position: relative;
+    right: -18px;
+}
+
+.radioLabel2 {
+    position: relative;
+    right: 595px;
+}
+
+.radio2 {
+    position: relative;
+    right: 376px
+}
+
+.radioLabel3 {
+    position: relative;
+    right: 989px
+}
+
+.radio3{
+    position: relative;
+    right:771px;
+}
+
+
+.thirdCard {
+    width: 42rem;
+    display: flex;
+    margin-bottom: 21px;
+}
+
+.repeatControlOrder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 36px;
+    border: 0px solid rgba(0,0,0,.125);
+}
+
